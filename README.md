@@ -3,18 +3,18 @@ example creating nix modules
 
 To use these modules
 
-  {
-    inputs,
-    lib,
-    config,
-    pkgs,
-    nix-search-cli,
-    ...
-  }: {
-    imports = [
-      ./modules
-    ];
+    {
+      inputs,
+      lib,
+      config,
+      pkgs,
+      nix-search-cli,
+      ...
+    }: {
+      imports = [
+        ./modules
+      ];
 
-    modules.common.enable = true;
-    modules.demo.enable = true;
-  }
+      modules.common.enable = true;
+      modules.demo.enable = true;
+    }
